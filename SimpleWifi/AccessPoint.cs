@@ -83,7 +83,7 @@ namespace SimpleWifi
 		/// <summary>
 		/// Returns the underlying network object.
 		/// </summary>
-		internal WlanAvailableNetwork Network
+		public WlanAvailableNetwork Network
 		{
 			get
 			{
@@ -92,10 +92,10 @@ namespace SimpleWifi
 		}
 
 
-		/// <summary>
-		/// Returns the underlying interface object.
-		/// </summary>
-		internal WlanInterface Interface
+        /// <summary>
+        /// Returns the underlying interface object.
+        /// </summary>
+        public WlanInterface Interface
 		{
 			get
 			{

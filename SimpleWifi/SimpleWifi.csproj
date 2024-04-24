@@ -3,13 +3,17 @@
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0</TargetFrameworks>
 		<Version>2.0.0</Version>
-		<Copyright>Copyright 2021</Copyright>
-		<Description>.NET Standard 2.0 library to manage wifi connections</Description>
-		<PackageId>SimpleWifi.netstandard</PackageId>
-		<PackageProjectUrl>https://github.com/mahdi-ataollahi/simplewifi</PackageProjectUrl>
-		<PackageTags>wifi networking</PackageTags>
-		<PackageReleaseNotes>This is .NET Standard version of SimpleWifi</PackageReleaseNotes>
+		<Copyright>Copyright 2024</Copyright>
+		<Description>.NET Standard 2.0 library to manage wifi connections，解决原先项目在使用中的一些问题</Description>
+		<PackageId>SimpleWifi.netstandard.Lsh</PackageId>
+		<PackageProjectUrl>https://github.com/microdreamsoft/simplewifi</PackageProjectUrl>
+		<PackageTags>wifi networking accesspoint</PackageTags>
+		<PackageReleaseNotes>This is a dervied .NET Standard version of SimpleWifi,bug fixed</PackageReleaseNotes>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>解决原先包一些使用上的问题</Title>
+		<Authors>LshSimpleWif</Authors>
+		<RepositoryUrl>https://github.com/microdreamsoft/simplewifi</RepositoryUrl>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)'=='Release'">
