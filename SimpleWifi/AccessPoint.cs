@@ -15,7 +15,7 @@ namespace SimpleWifi
 		private WlanInterface _interface;
 		private WlanAvailableNetwork _network;
 
-		internal AccessPoint(WlanInterface interfac, WlanAvailableNetwork network)
+		public AccessPoint(WlanInterface interfac, WlanAvailableNetwork network)
 		{
 			_interface = interfac;
 			_network = network;

@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0</TargetFrameworks>
-		<Version>2.0.0</Version>
+		<Version>2.0.1</Version>
 		<Copyright>Copyright 2024</Copyright>
 		<Description>.NET Standard 2.0 library to manage wifi connections，解决原先项目在使用中的一些问题</Description>
 		<PackageId>SimpleWifi.netstandard.Lsh</PackageId>
