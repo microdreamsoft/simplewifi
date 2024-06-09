@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0</TargetFrameworks>
-		<Version>2.1.0</Version>
+		<Version>2.1.1</Version>
 		<Copyright>Copyright 2024</Copyright>
 		<Description>.NET Standard 2.0 library to manage wifi connections，解决原先项目在使用中的一些问题</Description>
 		<PackageId>SimpleWifi.netstandard.Lsh</PackageId>
@@ -14,8 +14,8 @@
 		<Title>解决原先包一些使用上的问题</Title>
 		<Authors>LshSimpleWif</Authors>
 		<RepositoryUrl>https://github.com/microdreamsoft/simplewifi</RepositoryUrl>
-		<AssemblyVersion>2.1.0.0</AssemblyVersion>
-		<FileVersion>2.1.0.0</FileVersion>
+		<AssemblyVersion>2.1.1.0</AssemblyVersion>
+		<FileVersion>2.1.1.0</FileVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)'=='Release'">

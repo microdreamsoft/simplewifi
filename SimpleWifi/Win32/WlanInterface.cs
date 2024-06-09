@@ -59,7 +59,7 @@ namespace SimpleWifi.Win32
 		#endregion
 
 		#region Properties
-		internal WlanInterface(WlanClient client, WlanInterfaceInfo info)
+		public WlanInterface(WlanClient client, WlanInterfaceInfo info)
 		{
 			this.client = client;
 			this.info = info;
