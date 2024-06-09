@@ -33,7 +33,7 @@ namespace SimpleWifi
 		/// <summary>
 		/// Returns a list over all available access points
 		/// </summary>
-		public List<AccessPoint> GetAccessPoints()
+		public List<AccessPoint> GetAccessPoints(WlanInterface selectedIntf=null)
 		{
             List<AccessPoint> accessPoints = new List<AccessPoint>();
             if (_client.NoWifiAvailable)
@@ -41,6 +41,11 @@ namespace SimpleWifi
 			
 			foreach (WlanInterface wlanIface in _client.Interfaces)
 			{
+				if(selectedIntf != null && !wlanIface.InterfaceGuid.Equals(selectedIntf.InterfaceGuid))
+				{
+					continue;
+				}
+
 				WlanAvailableNetwork[] rawNetworks = wlanIface.GetAvailableNetworkList(0);
 				List<WlanAvailableNetwork> networks = new List<WlanAvailableNetwork>();
 
@@ -62,6 +67,12 @@ namespace SimpleWifi
 
 			return accessPoints;
 		}
+
+		public WlanInterface[] GetWlanInterfaces()
+		{
+			return _client.Interfaces;
+        }
+
 
 		/// <summary>
 		/// Disconnect all wifi interfaces
@@ -92,7 +103,15 @@ namespace SimpleWifi
 			}
 		}
 
-		private void inte_WlanNotification(WlanNotificationData notifyData)
+		public WlanClient Client
+		{
+			get
+			{
+				return _client;
+			}
+		}
+
+        private void inte_WlanNotification(WlanNotificationData notifyData)
 		{
 			if (notifyData.notificationSource == WlanNotificationSource.ACM && (NotifCodeACM)notifyData.NotificationCode == NotifCodeACM.Disconnected)
 				OnConnectionStatusChanged(WifiStatus.Disconnected);

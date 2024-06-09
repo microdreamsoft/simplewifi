@@ -64,7 +64,7 @@
             Converts an byte array into the hex representation, ex: [255, 255] -> "FFFF"
             </summary>
         </member>
-        <member name="M:SimpleWifi.Wifi.GetAccessPoints">
+        <member name="M:SimpleWifi.Wifi.GetAccessPoints(SimpleWifi.Win32.WlanInterface)">
             <summary>
             Returns a list over all available access points
             </summary>
